@@ -1,0 +1,17 @@
+REPORT:
+	The aim of this project is to crack the password using brute-force attack or dictionary attack, with md5 hash as user input. This program is coded on Python 3.7. Program gives the option to the user to select the attack method. Once the attack is selected by the user, the program asks the user for inputs. Using the provided input, the code cracks the password and displays to the user. For dictionary attack, the user should provide a file with list of passwords. For brute-force attack, the code checks the passwords with a length up to 6 and it checks for complex characters like lower character, upper character, numbers, special character (except \,”)
+Brute-Force Attack:
+	A list is provided with all the characters. When the hash is provided by the user, the program tries different test cases (passwords with different lengths, up to 6). Each combination of password is converted to a hash value and is compared to the user provided hash value. If the hash values match, the password is found and displayed to user with number of try and time take to find the password.
+Dictionary Attack:
+	User provides hash value and wordlist. Each word in the wordlist file is converted to md5 hash value and this hash value is compared with the user provided hash value. If it matched, then the password is displayed to the user. If there is no match found from the wordlist, the program will display that the password was not found in the wordlist.
+How to run the code?
+1. I used command prompt to run the code.
+2. Command used: python Shjo5831.py
+3. For dictionary attack, make sure that both the code and wordlist are in the same location. If not, don’t forget to mention the location of the file. Dont forget to mention the file type as well.
+4. Flaw: in brute-force attack, after the password is found the program quit. If we need to test again, run the code again. This issue is not found for dictionary attack.
+
+Reference:
+1. https://www.youtube.com/watch?v=CV_mMAYzTxw&t=777s
+
+
+
